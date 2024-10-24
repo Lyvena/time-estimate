@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-gray-100">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-center mb-8">AI Time Estimate Agent</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">Task Time Estimation</h1>
         <TimeEstimateForm />
       </main>
       <Footer />

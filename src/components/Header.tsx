@@ -22,28 +22,28 @@ export const Header = () => {
         </Link>
         <div className="flex items-center gap-6">
           <NavigationMenu>
-            <NavigationMenuList className="bg-blue-700/50 rounded-lg px-2">
+            <NavigationMenuList className="bg-blue-800 rounded-lg px-2">
               <NavigationMenuItem>
-                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-700"}>
                   Home
                 </Link>
               </NavigationMenuItem>
               {isAuthenticated && (
                 <>
                   <NavigationMenuItem>
-                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-700"}>
                       Dashboard
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-700"}>
                       Settings
                     </Link>
                   </NavigationMenuItem>
                 </>
               )}
               <NavigationMenuItem>
-                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-700"}>
                   Contact
                 </Link>
               </NavigationMenuItem>

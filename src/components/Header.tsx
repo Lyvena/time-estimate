@@ -22,7 +22,7 @@ export const Header = () => {
         </Link>
         <div className="flex items-center gap-6">
           <NavigationMenu>
-            <NavigationMenuList className="bg-blue-800 rounded-lg px-2">
+            <NavigationMenuList className="bg-blue-500/30 rounded-lg px-2">
               <NavigationMenuItem>
                 <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-700"}>
                   Home

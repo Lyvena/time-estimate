@@ -24,26 +24,26 @@ export const Header = () => {
           <NavigationMenu>
             <NavigationMenuList className="bg-blue-500/30 rounded-lg px-2">
               <NavigationMenuItem>
-                <Link to="/" className={navigationMenuTriggerStyle() + " text-white"}>
+                <Link to="/" className={navigationMenuTriggerStyle() + " text-blue-100"}>
                   Home
                 </Link>
               </NavigationMenuItem>
               {isAuthenticated && (
                 <>
                   <NavigationMenuItem>
-                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white"}>
+                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-blue-100"}>
                       Dashboard
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white"}>
+                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-blue-100"}>
                       Settings
                     </Link>
                   </NavigationMenuItem>
                 </>
               )}
               <NavigationMenuItem>
-                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white"}>
+                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-blue-100"}>
                   Contact
                 </Link>
               </NavigationMenuItem>

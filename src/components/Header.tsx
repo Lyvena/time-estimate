@@ -22,34 +22,38 @@ export const Header = () => {
         </Link>
         <div className="flex items-center gap-6">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="bg-blue-700/50 rounded-lg px-2">
               <NavigationMenuItem>
-                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
                   Home
                 </Link>
               </NavigationMenuItem>
               {isAuthenticated && (
                 <>
                   <NavigationMenuItem>
-                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
                       Dashboard
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
                       Settings
                     </Link>
                   </NavigationMenuItem>
                 </>
               )}
               <NavigationMenuItem>
-                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
                   Contact
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <Button variant="ghost" className="text-white hover:text-blue-100" asChild>
+          <Button 
+            variant="secondary" 
+            className="bg-white text-blue-600 hover:bg-blue-50" 
+            asChild
+          >
             <Link to="/auth">Sign In</Link>
           </Button>
         </div>

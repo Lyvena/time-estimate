@@ -22,28 +22,28 @@ export const Header = () => {
         </Link>
         <div className="flex items-center gap-6">
           <NavigationMenu>
-            <NavigationMenuList className="bg-blue-700/50 rounded-lg px-2">
+            <NavigationMenuList className="bg-white/10 backdrop-blur-sm rounded-lg px-2">
               <NavigationMenuItem>
-                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                <Link to="/" className={navigationMenuTriggerStyle() + " text-white hover:bg-white/20"}>
                   Home
                 </Link>
               </NavigationMenuItem>
               {isAuthenticated && (
                 <>
                   <NavigationMenuItem>
-                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:bg-white/20"}>
                       Dashboard
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:bg-white/20"}>
                       Settings
                     </Link>
                   </NavigationMenuItem>
                 </>
               )}
               <NavigationMenuItem>
-                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:bg-blue-500/50"}>
+                <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:bg-white/20"}>
                   Contact
                 </Link>
               </NavigationMenuItem>
@@ -51,7 +51,7 @@ export const Header = () => {
           </NavigationMenu>
           <Button 
             variant="secondary" 
-            className="bg-white text-blue-600 hover:bg-blue-50" 
+            className="bg-white/90 text-blue-600 hover:bg-white font-medium shadow-sm" 
             asChild
           >
             <Link to="/auth">Sign In</Link>

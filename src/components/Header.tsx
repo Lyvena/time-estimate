@@ -29,11 +29,18 @@ export const Header = () => {
                 </Link>
               </NavigationMenuItem>
               {isAuthenticated && (
-                <NavigationMenuItem>
-                  <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
-                    Dashboard
-                  </Link>
-                </NavigationMenuItem>
+                <>
+                  <NavigationMenuItem>
+                    <Link to="/dashboard" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                      Dashboard
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link to="/settings" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
+                      Settings
+                    </Link>
+                  </NavigationMenuItem>
+                </>
               )}
               <NavigationMenuItem>
                 <Link to="/contact" className={navigationMenuTriggerStyle() + " text-white hover:text-blue-100"}>
